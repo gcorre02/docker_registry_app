@@ -1,0 +1,10 @@
+jar.baseName = 'dockerapp-server-dao'
+
+dependencies {
+    compile project(':dockerapp-util')
+
+    compile 'org.hibernate:hibernate-entitymanager:4.3.10.Final'
+    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+    compile 'org.springframework.data:spring-data-jpa:1.8.0.RELEASE'
+    compile 'org.jadira.usertype:usertype.core:3.0.0.CR1'
+}

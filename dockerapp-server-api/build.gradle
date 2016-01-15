@@ -1,0 +1,6 @@
+jar.baseName = "dockerapp-server-api"
+
+dependencies {
+    compile project(':dockerapp-plugin-api')
+    compile "org.springframework.roo:org.springframework.roo.annotations:1.2.3.RELEASE"
+}

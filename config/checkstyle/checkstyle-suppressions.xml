@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC "-//Puppy Crawl//DTD Suppressions 1.1//EN" "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+<suppressions>
+    <!--
+
+        General class suppressions
+
+    -->
+    <!-- relax rules in unit tests -->
+    <suppress checks="FileLength_Error|AvoidStaticImport|ClassFanOutComplexity|ClassDataAbstractionCoupling|IllegalInstantiation|IllegalThrows|MagicNumber|MethodCount|ParameterNumber" files=".*Test.java"/>
+
+    <!-- we're ok with these -->
+    <suppress checks="IllegalInstantiation" files="EncodingUtils.java"/>
+    <suppress checks="IllegalInstantiation" files="LimitedByteArrayOutputStream.java"/>
+    <suppress checks="IllegalInstantiation" files="InterceptingHttpServletRequest.java"/>
+    <suppress checks="FileLength|MethodCount|NPathComplexity" files="EventLogEntry"/>
+    <suppress checks="MagicNumber" files="com.dockerapp.dao.entities.*"/>
+    <suppress checks="[a-zA-Z0-9]*" files="com.dockerapp.server.testsupport.runtime.*.java"/><!-- has to do with array inside annotations -->
+
+    <!-- try to fix these -->
+    <suppress checks="NPathComplexity" files="com.dockerapp.server.runtime.CampaignServiceImpl.java"/>
+    <suppress checks="MethodName" files="com.dockerapp.dao.repositories.CampaignCustomerDao.java"/>
+    <suppress checks="[a-zA-Z0-9]*" files="com.dockerapp.pluginapi.http.mappers.general.temp.*.java"/><!-- has to do with array inside annotations -->
+    <suppress checks="MethodLength" files="com.dockerapp.pluginapi.http.mappers.general.*.java"/>
+    <suppress checks="MethodCount" files="com.dockerapp.pluginapi.http.mappers.general.CustomerData.java"/>
+
+    <!-- Reactivate after implement specification based search on this class -->
+
+</suppressions>

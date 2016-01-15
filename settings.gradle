@@ -1,0 +1,7 @@
+Closure findModules = {
+  def list = []
+	rootDir.eachDir(){ dir -> dir.eachFileMatch({it == 'build.gradle'}, { if(dir.name.contains('test') && (System.properties['environment'] == 'production')) void else list += [dir.name] })}
+	list.toArray(new String[0])
+}
+
+include findModules()

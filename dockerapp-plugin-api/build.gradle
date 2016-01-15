@@ -1,0 +1,5 @@
+jar.baseName = 'dockerapp-plugin-api'
+
+dependencies {
+	compile project(':dockerapp-server-dao')
+}

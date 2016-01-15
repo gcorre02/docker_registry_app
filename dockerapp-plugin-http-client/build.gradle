@@ -1,0 +1,9 @@
+jar.baseName = 'dockerapp-plugin-http-client'
+
+dependencies {
+	compile project(':dockerapp-plugin-api')
+	compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+	compile 'commons-codec:commons-codec:1.6'
+
+	testCompile 'commons-io:commons-io:2.1'
+}

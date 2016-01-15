@@ -1,0 +1,22 @@
+jar.baseName = "dockerapp-server-runtime"
+
+dependencies {
+    compile project(':dockerapp-server-api')
+
+    compile 'org.apache.commons:commons-lang3:3.1'
+    compile 'commons-codec:commons-codec:1.6'
+    compile 'org.quartz-scheduler:quartz:2.2.1'
+
+    compile "org.springframework:spring-core:${versions.springframework}"
+    compile "org.springframework:spring-beans:${versions.springframework}"
+    compile "org.springframework:spring-context:${versions.springframework}"
+    compile "org.springframework.roo:org.springframework.roo.annotations:1.2.3.RELEASE"
+    compile 'org.hibernate:hibernate-entitymanager:4.3.10.Final'
+    compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+    compile "org.springframework:spring-webmvc:${versions.springframework}"
+    compile "org.springframework:spring-jdbc:${versions.springframework}"
+    compile "org.springframework:spring-tx:${versions.springframework}"
+    compile 'org.apache.tomcat:tomcat-jdbc:8.0.22'
+    compile "mysql:mysql-connector-java:${versions.mysql}"
+    compile "org.springframework:spring-aspects:${versions.springframework}"
+}

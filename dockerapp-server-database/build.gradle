@@ -1,0 +1,6 @@
+jar.baseName = 'dockerapp-server-database'
+
+dependencies {
+	compile 'org.flywaydb:flyway-core:3.2.1'
+	compile "mysql:mysql-connector-java:${versions.mysql}"
+}

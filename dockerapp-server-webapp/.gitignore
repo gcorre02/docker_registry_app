@@ -1,0 +1,8 @@
+/target
+/bin
+*.csv
+/build
+.classpath
+.project
+.settings
+.gradle

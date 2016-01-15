@@ -1,0 +1,17 @@
+/targetJSONs/
+.svn
+*.iml
+*.idea/
+*.json
+/pojo2json/
+*.csv#
+.DS_Store
+/build
+*.classpath
+*.project
+.settings
+.gradle
+/out
+*.directory
+.java-version
+*application-production.properties

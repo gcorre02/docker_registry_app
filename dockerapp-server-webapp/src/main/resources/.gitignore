@@ -1,0 +1,4 @@
+!dbStubStore/*.json
+!UuidStore/*.json
+!migrationStore/*.json
+!jsonStore/*.json
